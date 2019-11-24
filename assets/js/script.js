@@ -66,7 +66,7 @@ async function load() {
       let mousex = e.screenX;
       let calc = (10 - parseInt((mousex/screenw) * 20)) / 20;
 
-      document.getElementById('table').style.transform = `translate(-50%, -50%) scale(0.9) skewY(${calc}deg)`;
+      document.getElementById('table').style.transform = `translate(-50%, -50%) scale(1.1) skewY(${calc}deg)`;
     };
   }
   
