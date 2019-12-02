@@ -7,11 +7,10 @@ window.mobilecheck = function() {
 
 async function add(el, tr) {
     let td = document.createElement('td')
-    td.setAttribute('period', el.period)
+    td.setAttribute('period', el.ypos)
     td.setAttribute('group', el.xpos)
     tr.appendChild(td);
     td.onclick = () => {
-      
       var modal = new tingle.modal({
           footer: true,
           stickyFooter: false,
@@ -57,7 +56,9 @@ async function add(el, tr) {
 async function load() {
   if (window.mobilecheck() == false) 
     particlesJS.load('particles-js', 'assets/particles.json');
-  
+  else
+    screen.orientation.lock('landscape');
+
   
   let d = await fetch('/assets/elements.json');
   d = await d.json()

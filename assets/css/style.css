@@ -98,6 +98,70 @@ body {
   float: right;
 }
 
+td[group="1"]:not([period="9"]):not([period="10"]) {
+  background-color: #ffcab8 !important;
+  box-shadow: 0 0 10px 2px #ffcab8;
+}
+
+td[group="2"]:not([period="9"]):not([period="10"]) {
+  background-color: #fcc2f3 !important;
+  box-shadow: 0 0 10px 2px #fcc2f3;
+}
+
+td[group="3"]:not([period="9"]):not([period="10"]),
+td[group="4"]:not([period="9"]):not([period="10"]),
+td[group="5"]:not([period="9"]):not([period="10"]),
+td[group="6"]:not([period="9"]):not([period="10"]),
+td[group="7"]:not([period="9"]):not([period="10"]),
+td[group="8"]:not([period="9"]):not([period="10"]),
+td[group="9"]:not([period="9"]):not([period="10"]),
+td[group="10"]:not([period="9"]):not([period="10"]),
+td[group="11"]:not([period="9"]):not([period="10"]),
+td[group="12"]:not([period="9"]):not([period="10"]) {
+  background-color: #b8f2ff !important;
+  box-shadow: 0 0 10px 2px #b8f2ff;
+}
+
+td[group="13"]:not([period="9"]):not([period="10"]) {
+  background-color: #a1ffa4 !important;
+  box-shadow: 0 0 10px 2px #a1ffa4;
+}
+
+td[group="14"]:not([period="9"]):not([period="10"]) {
+  background-color: #af94ff !important;
+  box-shadow: 0 0 10px 2px #af94ff;
+}
+
+td[group="15"]:not([period="9"]):not([period="10"]) {
+  background-color: #c9c9c9 !important;
+  box-shadow: 0 0 10px 2px #c9c9c9;
+}
+
+td[group="16"]:not([period="9"]):not([period="10"]) {
+  background-color: #edfc86 !important;
+  box-shadow: 0 0 10px 2px #edfc86;
+}
+
+td[group="17"]:not([period="9"]):not([period="10"]) {
+  background-color: #b09d8d !important;
+  box-shadow: 0 0 10px 2px #b09d8d;
+}
+
+td[group="18"]:not([period="9"]):not([period="10"]) {
+  background-color: #91b090 !important;
+  box-shadow: 0 0 10px 2px #91b090;
+}
+
+td[period="9"] {
+  background-color: #adccde !important;
+  box-shadow: 0 0 10px 2px #adccde;
+}
+
+td[period="10"] {
+  background-color: #b39bba !important;
+  box-shadow: 0 0 10px 2px #b39bba;
+}
+
 @media only screen and (max-device-width: 480px) {
   #table  {
     position: fixed;
