@@ -4,10 +4,6 @@ window.mobilecheck = function() {
   return check;
 }
 
-particlesJS.load('particles-js', 'assets/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-
 
 async function add(el, tr) {
     let td = document.createElement('td')
@@ -31,11 +27,10 @@ async function add(el, tr) {
 <tr><td>Appearance</td><td class="caps">${el.appearance}</td></tr>
 <tr><td>Electron Configuration</td><td>${el.electron_configuration}</td></tr>
 <tr><td>Boiling Point</td><td class="caps">${el.boil} °C</td></tr>
-<tr><td>Melting Point</td><td class="caps">${el.melt} °C</td></tr>
-
+<tr><td>Melting Point</td><td class="caps">${el.melt} °C</td></tr
 </tbody></table>
 `);
-      if (window.mobilecheck() === false) modal.open();
+      modal.open();
     }
 
     let symbol = document.createElement('span');
@@ -60,15 +55,9 @@ async function add(el, tr) {
 }
 
 async function load() {
-  if (window.mobilecheck() == false) {
-    document.onmousemove = function(e){
-      let screenw = document.getElementById('table').offsetWidth
-      let mousex = e.screenX;
-      let calc = (10 - parseInt((mousex/screenw) * 20)) / 20;
-
-      document.getElementById('table').style.transform = `translate(-50%, -50%) scale(1.1) skewY(${calc}deg)`;
-    };
-  }
+  if (window.mobilecheck() == false) 
+    particlesJS.load('particles-js', 'assets/particles.json');
+  
   
   let d = await fetch('/assets/elements.json');
   d = await d.json()

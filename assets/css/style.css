@@ -52,7 +52,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(0.9);
    -moz-user-select: none;
    -khtml-user-select: none;
    -webkit-user-select: none;
@@ -105,8 +105,8 @@ body {
     position: fixed;
     top: 0;
     width: 90vw !important;
-    left: 0;
-    transform: scale(1.1);
+    left: -2.5%;
+    transform: scale(0.9) !important;
   }
 }
 
