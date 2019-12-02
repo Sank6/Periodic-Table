@@ -98,8 +98,6 @@ body {
   float: right;
 }
 
-
-
 @media only screen and (max-device-width: 480px) {
   #table  {
     position: fixed;

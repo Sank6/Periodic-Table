@@ -7,8 +7,8 @@ window.mobilecheck = function() {
 
 async function add(el, tr) {
     let td = document.createElement('td')
-    td.setAttribute('x', el.xpos)
-    td.setAttribute('y', el.ypos)
+    td.setAttribute('period', el.period)
+    td.setAttribute('group', el.xpos)
     tr.appendChild(td);
     td.onclick = () => {
       
