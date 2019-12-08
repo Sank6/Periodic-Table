@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://periodic-table.ooo/sitemap.xml
