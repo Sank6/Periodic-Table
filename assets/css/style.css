@@ -26,6 +26,7 @@ h1 {
 #by:hover {
   cursor: pointer;
   text-shadow: 0 0 5px white;
+  opacity: 0.8;
 }
 
 #particles-js {
